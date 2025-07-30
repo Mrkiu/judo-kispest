@@ -123,7 +123,7 @@ h2 {
 
 .hero-left {
   flex: 1;
-  padding: 1rem;
+  padding: 0rem;
   align-items: left;
   justify-content: center;
 }
@@ -137,7 +137,7 @@ h2 {
 .hero-left .subtitle {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .hero-btn-wrapper {
@@ -197,7 +197,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
 }
 
 @media (min-width: 768px) {
@@ -258,7 +258,7 @@ h2 {
   flex-direction: column;
   justify-content: stretch;
   padding: 1rem;
-  text-align: justify;
+  text-align: left;
   color: #eeeeee;
   overflow: hidden;
     object-fit: contain; /* prevents cropping */
@@ -268,7 +268,7 @@ h2 {
 .sectionClasses {
   background-color: #1e1e24;
   color: #ffcf99;
-  padding: 0rem 3rem;
+  padding: 0rem 1rem;
   padding-top: 0rem;
   text-align: center;
 }
@@ -324,7 +324,7 @@ h2 {
 }
 
 .class-text p {
-  text-align: justify;
+  text-align: left;
   margin-bottom: 1rem;
 }
 
@@ -353,7 +353,7 @@ h2 {
 
 .price-section {
   background-color: #1e1e24;
-  padding: 3rem 3rem;
+  padding: 3rem 1rem;
   padding-top: 2rem;
 }
 
@@ -499,7 +499,7 @@ h2 {
 .sectionCoaches {
   background-color: #1e1e24;
   color: #ffcf99;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
@@ -558,7 +558,7 @@ h2 {
   font-family: 'Roboto Slab', serif;
   color: #ffcf99;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .sectionFAQ {
