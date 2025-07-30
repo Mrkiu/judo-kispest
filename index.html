@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judo Szakosztály</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+    <div class="nav-logo">
+        <img src="logo.png" alt="Judo Logo">
+    </div>
+
+    <div class="nav-toggle" id="navToggle">&#9776;</div> <!-- Hamburger icon -->
+
+    <div class="nav-links" id="navLinks">
+        <a class="nav-btn" href="#classes">Edzések</a>
+        <a class="nav-btn" href="#prices">Árak</a>
+        <a class="nav-btn" href="#coach">Edzők</a>
+        <a class="nav-btn" href="#FAQ">GYIK</a>
+        <a class="nav-btn" href="#footer">Kapcsolat</a>
+    </div>
+    </div>
+
+    <div class="scroll-container">
+        <section id="hero" class="scroll-offset">
+            <div class="sectionHero">
+                <div class="hero-left">
+                    <h1>Fedezd fel a judo erejét</h1>
+                    <p class="subtitle">A KAC Judo szakosztályában nemcsak küzdeni, de fejlődni is megtanulsz – testben és lélekben. Legyél részese egy összetartó, fegyelmezett és inspiráló közösségnek!</p>
+                    <div class="hero-btn-wrapper">
+                        <button class="hero-btn" onclick="scrollToSection('intro')">Tudj meg többet</button>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <img src="hero.png" alt="Hero image" class="img-top" />
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="scroll-offset">
+            <div class="sectionIntro">
+                <div class="intro-container">
+                    <div class="intro-left">
+                        <img src="group.jpg" alt="Group image" class="img-top" />
+                    </div>
+                    <div class="intro-right">
+                        <h1>Miért jó a judo?</h1>
+                        <p>
+                            A júdó nem csupán egy küzdősport – egy életre szóló nevelési eszköz. Szakosztályunkban a gyermekek játékos, biztonságos formában ismerkedhetnek meg ezzel a japán eredetű sportággal, amely egyszerre fejleszti a testet és a szellemet. A júdó különösen hasznos a gyerekek számára, mert fejleszti a mozgáskoordinációt, az egyensúlyérzéket és a hajlékonyságot, miközben erősíti az önfegyelmet, a kitartást és az önbizalmat is. Segít a szabályok elfogadásában, valamint a mások iránti tisztelet kialakításában.
+                        </p>
+                        <p>
+                            Emellett közösségformáló ereje is kiemelkedő, hiszen a gyerekek együtt tanulnak, edzenek és fejlődnek. Edzéseink során kiemelten fontosnak tartjuk a biztonságot, a fokozatosságot és a jó hangulatot. Várunk minden érdeklődőt, aki szeretné kipróbálni magát és fejlődni egy támogató közösségben!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="classes" class="scroll-offset">
+            <div class="sectionClasses">
+                <h1>Edzéseink</h1>
+                <div class="class-cards">
+                    <div class="class-card">
+                        <h2>Ovis - Kisiskolás csoport</h2>
+                        <div class="class-text">
+                            <p>Vidám, játékos edzések 5–8 éves gyermekeknek, ahol a mozgás öröme és az alapvető judo készségek elsajátítása áll a középpontban. A gyerekek megtanulják az esések biztonságos technikáját, fejlesztik koordinációjukat, egyensúlyérzéküket és koncentrációjukat egy támogató és biztonságos közegben.</p>
+                        </div>
+                        <div class="class-times">
+                            <p>Kedd: 17:00–18:00</p>
+                            <p>Péntek: 16:30–17:30</p>
+                        </div>
+                        <button onclick="scrollToSection('footer')">Érdekel</button>
+                    </div>
+                    <div class="class-card">
+                        <h2>Iskolás csoport</h2>
+                        <div class="class-text">
+                            <p>Ez a csoport a már judo-alapokkal rendelkező, 9–14 éves korosztály számára kínál intenzívebb fejlődési lehetőséget. Az edzések során haladó technikákra, versenyfelkészülésre, fegyelemre és kitartásra helyeződik a hangsúly, miközben a sportág iránti szeretet is tovább mélyül.</p>
+                        </div>
+                        <div class="class-times">
+                            <p>Hétfő és Csütörtok: 17:30-18:30</p>
+                        </div>
+                        <button onclick="scrollToSection('footer')">Érdekel</button>
+                    </div>
+                    <div class="class-card">
+                        <h2>Felnőtt csoport</h2>
+                        <div class="class-text">
+                            <p>Edzéseink felnőtteknek szólnak, legyen szó teljesen kezdőkről, újrakezdőkről vagy haladó szinten sportolókról. Az edzések intenzitása és technikai tartalma az egyéni szinthez igazodik – így mindenki a saját tempójában fejlődhet. A cél az erőnlét fejlesztése, technikai tudás bővítése és a küzdősport iránti szenvedély elmélyítése egy támogató, motiváló közösségben.</p>
+                        </div>
+                        <div class="class-times">
+                            <p>Hétfő és Csütörtok: 18:30-20:00</p>
+                        </div>
+                        <button onclick="scrollToSection('footer')">Érdekel</button>
+                    </div>
+                    <div class="class-card">
+                        <h2>Zenés Gimnasztika</h2>
+                        <div class="class-text">
+                            <p>Mozgás öröme zenére! A zenés gimnasztika kiváló lehetőség a mozgásfejlesztésre, ritmusérzék javítására és az egészséges életmód megalapozására, megtartására.</p>
+                        </div>
+                        <div class="class-times">
+                            <p>Szerda és Péntek: 19:00-20:00</p>
+                        </div>
+                        <button onclick="scrollToSection('footer')">Érdekel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="scroll-offset">
+            <div class="price-section">
+                <div class="price-list">
+                    <h1>Áraink</h1>
+                    <table>
+                    <thead>
+                        <tr>
+                        <th>Korcsoport/Edzés</th>
+                        <th>Edzések gyakorisága</th>
+                        <th>Havi díj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td data-label="Korcsoport:">Gyerek, Diák</td>
+                        <td data-label="Edzések gyakorisága:">Heti 2-3 alkalom</td>
+                        <td data-label="Havi díj:">
+                            <p>15.000 Ft</p>
+                            <p>23.000 Ft - (testvérpár kedvezmény)</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td data-label="Korcsoport:">Felnőtt</td>
+                        <td data-label="Edzések gyakorisága:">Heti 2 alkalom</td>
+                        <td data-label="Havi díj:">21.000 Ft</td>
+                        </tr>
+                        <tr>
+                        <td data-label="Korcsoport:">Gimnasztika minden korosztálynak</td>
+                        <td data-label="Edzések gyakorisága:">Heti 2 alkalom</td>
+                        <td data-label="Havi díj:">8.000 Ft</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+                        <div class="sectionQuote">
+            <div class="quote-wrapper">
+                <div class="quote-image">
+                <img src="jkRound.jpg" alt="Inspirational" />
+                </div>
+                <div class="quote-content">
+                <blockquote>
+                    „A judo nem csupán sport, hanem egy életforma, amely megtanít tisztelni, kitartani és fejlődni.”
+                </blockquote>
+                <cite>– Jigoro Kano –</cite>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="coach" class="scroll-offset">
+            <div class="sectionCoaches">
+                <h1>Edzőink</h1>
+                <div class="coach-cards">
+                    <div class="coach-card">
+                        <img src="coach1.png" alt="Coach 1" />
+                        <h2>Jobbágy István</h2>
+                        <p>Szakosztályvezető, 6 danos mester, 30+ év edzői és testnevelői tapasztalat. Ifi és felnőtt csoportok edzője.</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="coach2.png" alt="Coach 2" />
+                        <h2>Kardos Csaba</h2>
+                        <p>6 danos mester, iskolás csoportok edzője és utánpótlás nevelés szakértője.</p>
+                    </div>
+                    <div class="coach-card">
+                        <img src="coach3.jpg" alt="Coach 3" />
+                        <h2>Mukri Martin</h2>
+                        <p>1 kyu, ovisok és kis iskolások edzője.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="FAQ" class="scroll-offset">
+            <div class="sectionFAQ">
+                <h1>GYIK – Gyakran Ismételt Kérdések</h1>
+                <div class="faq-item">
+                    <button class="faq-question">Mikortól lehet jelentkezni judo edzésekre?</button>
+                    <div class="faq-answer">
+                    <p>Bármikor lehet csatlakozni! Edzéseink egész évben zajlanak, kezdők és haladók számára is nyitottak vagyunk.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Milyen felszerelés szükséges az első edzéshez?</button>
+                    <div class="faq-answer">
+                    <p>Az első alkalommal elegendő egy melegítő vagy kényelmes sportöltözet és egy pár papucs. Üdítőnek kizárólag víz vihető a terembe, jól záródó flakonban.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Vannak külön edzések gyerekeknek és felnőtteknek?</button>
+                    <div class="faq-answer">
+                    <p>Igen, külön csoportokat tartunk gyerekeknek, felnőtteknek és versenyzőknek is, hogy mindenki a saját szintjén fejlődhessen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer" class="scroll-offset">
+            <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="logo.png" alt="Judo Klub Logo" class="footer-logo">
+
+                    <div class="footer-contact">
+                        <p><strong>Cím:</strong> 1194 Budapest, Katona József u. 3</p>
+                        <p><strong>Telefon:</strong> +36 30 123 4567</p>
+                        <p><strong>Email:</strong> info@judoklub.hu</p>
+                    </div>
+
+                    <div class="footer-hours">
+                        <p><strong>Terem nyitvatartás:</strong></p>
+                        <p>Az edzések megjelölt időpontjaiban</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <p><strong>Gyorslinkek:</strong></p>
+                        <a href="#classes">Edzések</a> |
+                        <a href="#prices">Áraink</a> |
+                        <a href="#coach">Edzőink</a> |
+                        <a href="#FAQ">GYIK</a>
+                    </div>
+
+                    <div class="footer-social">
+                        <p><strong>Kövess minket:</strong></p>
+                        <a href="https://facebook.com/judoklub" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube fa-lg"></i>
+                        </a>
+                    </div>
+
+                    <p class="footer-copy">© 2025 Kispesti Atlétikai Club - Judo szakosztály – Minden jog fenntartva.</p>
+                    </div>
+
+                <div class="footer-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.752993850686!2d19.147989076097765!3d47.43625957117464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c28944c74487%3A0xe5e4af9065b1b9e7!2sTichy%20Lajos%20Sportcentrum!5e0!3m2!1shu!2shu!4v1753788126771!5m2!1shu!2shu"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+            </div>
+            </footer>
+        </section>
+    </div>
+
+    <script>
+    document.getElementById("navToggle").addEventListener("click", function () {
+        document.getElementById("navLinks").classList.toggle("active");
+    });
+    </script>
+
+    <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+        button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('open');
+        });
+    });  
+    </script>
+
+    <script>
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+    </script>
+
+
+</body>
+</html>
