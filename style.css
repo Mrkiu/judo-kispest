@@ -14,7 +14,7 @@ h1{
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
 }
-h2 {
+h2, a{
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -182,6 +182,30 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.donate {
+  background-color: #fdf5e6;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donate h2 {
+  color: #1e1e24;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.donate .club-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.donate .tax-number {
+  font-size: 1em;
+  color: #555;
+}
+
 .sectionIntro h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -216,7 +240,6 @@ h2 {
   flex-direction: column;
   gap: 2rem;
   background-color: #2a2a35;
-  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.8);
   height: auto;
 }
 
@@ -242,14 +265,10 @@ h2 {
 
 .intro-left img {
   width: 100%;
-  max-height: 45vh; /* scales with screen height */
-  max-width: 80vh;
   height: auto;
-  object-fit: contain; /* prevents cropping */
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /*-webkit-filter: grayscale(100%);
-  filter: grayscale(100%);*/
 }
 
 .intro-right {
@@ -261,7 +280,7 @@ h2 {
   text-align: left;
   color: #eeeeee;
   overflow: hidden;
-    object-fit: contain; /* prevents cropping */
+  object-fit: contain;
 
 }
 
@@ -304,9 +323,6 @@ h2 {
   background-color: #2a2a35;
   padding: 1.5rem;
   border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.8);
-    /*
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);*/
   transition: transform 0.2s ease;
 }
 
@@ -364,11 +380,6 @@ h2 {
   padding: 2rem;
   border-radius: 12px;
   margin: 0 auto;
-  /*
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-  */
-    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.8);
-
 }
 
 .price-list h2 {
@@ -433,7 +444,8 @@ h2 {
   background-color: #fdf5e6;
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
+  align-items: center;
+  padding: 1rem;
 }
 
 .quote-wrapper {
@@ -478,15 +490,6 @@ h2 {
   margin-bottom: 0.5rem;
   position: relative;
   color: #333;
-}
-
-.quote-content blockquote::before {
-  font-size: 3rem;
-  color: #ffcf99;
-  position: absolute;
-  top: -1rem;
-  left: -1rem;
-  font-family: 'Kanit', sans-serif;
 }
 
 .quote-content cite {
@@ -743,5 +746,4 @@ section {
   position: relative;
   scroll-margin-top: 100px;
 }
-
 
