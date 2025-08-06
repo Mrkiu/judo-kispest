@@ -16,7 +16,7 @@
         <img src="logo.png" alt="Judo Logo">
     </div>
 
-    <div class="nav-toggle" id="navToggle">&#9776;</div> <!-- Hamburger icon -->
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
 
     <div class="nav-links" id="navLinks">
         <a class="nav-btn" href="#classes">Edzések</a>
@@ -42,6 +42,20 @@
                 </div>
             </div>
         </section>
+
+        <div class="sectionQuote">
+            <div class="quote-wrapper">
+                <div class="quote-image">
+                <img src="jkRound.jpg" alt="Inspirational" />
+                </div>
+                <div class="quote-content">
+                <blockquote>
+                    „Ha van erőfeszítés, mindig van eredmény.”
+                </blockquote>
+                <cite>– Jigoro Kano –</cite>
+                </div>
+            </div>
+        </div>
 
         <section id="intro" class="scroll-offset">
             <div class="sectionIntro">
@@ -147,18 +161,10 @@
                     </table>
                 </div>
             </div>
-                        <div class="sectionQuote">
-            <div class="quote-wrapper">
-                <div class="quote-image">
-                <img src="jkRound.jpg" alt="Inspirational" />
-                </div>
-                <div class="quote-content">
-                <blockquote>
-                    „A judo nem csupán sport, hanem egy életforma, amely megtanít tisztelni, kitartani és fejlődni.”
-                </blockquote>
-                <cite>– Jigoro Kano –</cite>
-                </div>
-            </div>
+            <div class="donate">
+                <h2>Támogasson minket adója 1%-val</h2>
+                <p class="club-name">Kispesti Atlétikai Club</p>
+                <p class="tax-number">Adószám: <strong>18056697-1-43</strong></p>
             </div>
         </section>
 
@@ -203,13 +209,19 @@
                 <div class="faq-item">
                     <button class="faq-question">Honnan tudok judo ruhát szerezni?</button>
                     <div class="faq-answer">
-                    <p>Kezdő ruha beszerzésére a Decathlont szoktuk javasolni, de nekünk is vannak használt ruháink korlátozott mennyiségben és méretekben, amelyeket </p>
+                    <p>Kezdő ruha beszerzésére a Decathlont szoktuk javasolni, de nekünk is vannak használt ruháink korlátozott mennyiségben és méretekben, amiket tudunk biztosítani.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-question">Vannak külön edzések gyerekeknek és felnőtteknek?</button>
                     <div class="faq-answer">
                     <p>Igen, külön csoportokat tartunk gyerekeknek, felnőtteknek és versenyzőknek is, hogy mindenki a saját szintjén fejlődhessen.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Lehet bankkártyával is fizetni a tagdíjat?</button>
+                    <div class="faq-answer">
+                    <p>Igen, ugyan kártyaolvasónk az nincsen, de utalásokat tudunk fogadni az alábbi számlaszámra.: Kispesti Atlétikai Club - 11719001-20263175</p>
                     </div>
                 </div>
             </div>
@@ -272,11 +284,24 @@
         </section>
     </div>
 
-    <script>
-    document.getElementById("navToggle").addEventListener("click", function () {
-        document.getElementById("navLinks").classList.toggle("active");
+<script>
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  // Toggle menu on hamburger click
+  navToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
+
+  // Close menu when any nav link is clicked
+  const links = navLinks.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
     });
-    </script>
+  });
+</script>
 
     <script>
     document.querySelectorAll('.faq-question').forEach(button => {
@@ -299,3 +324,4 @@
 
 </body>
 </html>
+
