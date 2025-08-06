@@ -183,14 +183,14 @@ h2, a{
 }
 
 .donate {
-  background-color: #fdf5e6;
+  background-color: #8E1616;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.donate h2 {
-  color: #1e1e24;
+.donate h1 {
+  color:#f7f7f7;
   margin-bottom: 15px;
   font-size: 1.5em;
 }
@@ -199,11 +199,13 @@ h2, a{
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
+  color: #f7f7f7;
+
 }
 
 .donate .tax-number {
   font-size: 1em;
-  color: #555;
+  color: #f7f7f7;
 }
 
 .sectionIntro h1 {
@@ -746,4 +748,5 @@ section {
   position: relative;
   scroll-margin-top: 100px;
 }
+
 
